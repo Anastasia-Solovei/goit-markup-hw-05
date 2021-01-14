@@ -4,9 +4,12 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-bcg-color: #ffffff;
-  --secondary-bcg-color: #2f303a;
+  --secondary-bcg-color: #f5f4fa;
+  --footer-bcg-color: #2f303a;
+  --secondary-logo-color: #000000;
+  --hero-bcg-color: #c4c4c4;
   --white-color: #ffffff;
-  --primary-social-icon-color: #afb1b8;
+  --icon-color: #afb1b8;
   --project-overlay-background: rgba(33, 150, 243, 0.9);
 }
 
@@ -74,9 +77,10 @@ button:focus {
 }
 
 .logo .header {
+  color: var(--secondary-logo-color);
+
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #000000;
 }
 
 /* Меню навигации */
@@ -119,15 +123,17 @@ button:focus {
 
 .nav-link::after {
   content: '';
+
   position: absolute;
   bottom: 0;
   left: 0;
-
   display: inline-block;
   width: 100%;
   height: 4px;
-  border-radius: 2px;
+
   background-color: var(--accent-color);
+
+  border-radius: 2px;
   opacity: 0;
 }
 
@@ -153,6 +159,7 @@ button:focus {
   padding-bottom: 32px;
 
   color: var(--primary-text-color);
+
   font-style: normal;
   font-weight: 500;
   line-height: 1.14;
@@ -166,19 +173,20 @@ button:focus {
 }
 
 .contact-icon {
-  fill: currentColor;
   margin-right: 10px;
+
+  fill: currentColor;
 }
 
 /*------------Стили основного контента------------*/
 .hero {
   padding: 200px 0;
-
   max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #c4c4c4;
+
+  background-color: var(--hero-bcg-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -213,7 +221,7 @@ button:focus {
   padding: 6px 22px;
 
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bcg-color);
 
   font-family: inherit;
   font-weight: 500;
@@ -279,6 +287,7 @@ button:focus {
 .feature-item {
   display: inline-flex;
   flex-direction: column;
+
   width: 270px;
 }
 
@@ -288,11 +297,12 @@ button:focus {
 
 .feature-icon-wrapper {
   display: flex;
-  height: 120px;
   justify-content: center;
   align-items: center;
 
-  background-color: #f5f4fa;
+  height: 120px;
+
+  background-color: var(--secondary-bcg-color);
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -319,12 +329,13 @@ button:focus {
 .team.section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-bcg-color);
 }
 
 .team-item {
   padding-bottom: 30px;
   width: 270px;
+
   background-color: var(--primary-bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -365,7 +376,7 @@ button:focus {
   width: 44px;
   height: 44px;
 
-  color: var(--primary-social-icon-color);
+  color: var(--icon-color);
   background-color: transparent;
 
   border-radius: 50%;
@@ -380,6 +391,7 @@ button:focus {
 .social-icon {
   width: 20px;
   height: 20px;
+
   fill: currentColor;
 }
 
@@ -399,8 +411,8 @@ button:focus {
   width: 170px;
   height: 90px;
 
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -439,7 +451,8 @@ button:focus {
   margin-left: 30px;
   margin-bottom: 30px;
   width: 370px;
-  background: #ffffff;
+
+  background: var(--primary-bcg-color);
 }
 
 .project-item:nth-child(3n + 1) {
@@ -486,14 +499,15 @@ button:focus {
 }
 
 .project-photo .text {
+  color: var(--white-color);
+
   font-size: 18px;
   line-height: 1.56;
-
-  color: var(--white-color);
 }
 
 .project-description {
   padding: 20px 24px;
+
   border: 1px solid #eeeeee;
   border-top: none;
   box-sizing: border-box;
@@ -517,7 +531,7 @@ button:focus {
 /*--------------- Подвал сайта ----------------------*/
 
 footer {
-  background-color: var(--secondary-bcg-color);
+  background-color: var(--footer-bcg-color);
 }
 
 .section.footer {
@@ -545,6 +559,7 @@ footer {
 .address {
   display: inline-block;
   margin-bottom: 9px;
+
   color: var(--white-color);
 
   font-style: normal;
@@ -587,6 +602,7 @@ footer {
 .social-footer-wrapper {
   display: inline-flex;
   flex-direction: column;
+
   width: 206px;
   margin-left: 70px;
 }
@@ -623,6 +639,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -640,7 +657,7 @@ footer {
   min-width: 528px;
   min-height: 581px;
 
-  background-color: #ffffff;
+  background-color: var(--primary-bcg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -658,7 +675,8 @@ footer {
   padding: 0;
 
   border: none;
-  background-color: transparent;
+  background: var(--primary-bcg-color);
+
   cursor: pointer;
 }
 
@@ -666,7 +684,8 @@ footer {
   width: 100%;
   height: 100%;
 
+  fill: currentColor;
+
   border-radius: 50%;
-  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
