@@ -406,7 +406,11 @@ button:focus {
 
 .social-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+
+.social-item:not(:first-child) {
+  margin-left: 10px;
 }
 
 .social-link {
